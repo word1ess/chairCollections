@@ -1,0 +1,489 @@
+<!-- Сообщаем браузеру как стоит обрабатывать эту страницу -->
+<!DOCTYPE html>
+<!-- Оболочка документа, указываем язык содержимого -->
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/svgicons/logo-small.svg">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-ui-slider@1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.8.1/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/app.min.js"></script>
+    <title>О нас</title>
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="header">
+    <header class="header__top">
+        <div class="container">
+            <div class="header__address">
+                <p>Москва, ул. Академика Королева, 13, стр. 1</p>
+                <p>пн-сб 10:00–19:00</p>
+            </div>
+            <nav class="header__phones">
+                <a href="tel:+7 925-267-46-34">
+                    <p>+7 925-267-46-34</p>
+                    <img src="img/svgicons/phone.svg" alt="">
+                </a>
+                <a href="tel:8 800-300-82-91">
+                    <p>8 800-300-82-91</p>
+                </a>
+            </nav>
+            <div class="header__callback">
+                <button>Заказать звонок</button>
+                <a href="https://api.whatsapp.com/send?phone=79689351446">Написать в Whatsapp</a>
+            </div>
+        </div>
+    </header>
+    <footer class="header__bottom">
+        <div class="container">
+            <div class="header__burger _burger-catalog">
+                <span></span>
+            </div>
+            <a href="/" class="header__logo">
+                <img src="img/svgicons/logo.svg" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <a href="#">О нас</a>
+                <a href="#">Проекты</a>
+                <a href="#">Бренды</a>
+                <a href="#">Дизайнерам</a>
+                <a href="#">Комплектация</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <form action="#" class="header__search _search">
+                <input type="search" placeholder="Поиск">
+                <button type="submit">
+                    <img src="img/svgicons/search.svg" alt="search-btn">
+                </button>
+                <div class="close _search-close">×</div>
+            </form>
+            <nav class="header__buttons">
+                <button class="header__search-mobile _search-btn">
+                    <img src="img/svgicons/search.svg" alt="search-btn">
+                </button>
+                <a href="#">
+                    <img src="img/svgicons/cart.svg" alt="cart">
+                </a>
+                <a href="#">
+                    <img src="img/svgicons/favorite.svg" alt="favorite">
+                </a>
+                <a href="#">
+                    <img src="img/svgicons/lk.svg" alt="lk">
+                </a>
+            </nav>
+        </div>
+    </footer>
+</header>
+<section class="header-catalog">
+    <div class="header-catalog__window">
+        <div class="container">
+            <main class="header-catalog__row">
+                <nav class="header-catalog__links _links-main">
+                    <a href="#" class="_link-main">
+                        Дизайнерская мебель
+                        <img src="img/svgicons/slider-arrow.svg" alt="">
+                    </a>
+                    <a href="#" class="_link-main">
+                        Horeca
+                        <img src="img/svgicons/slider-arrow.svg" alt="">
+                    </a>
+                    <a href="#">Освещение</a>
+                    <a href="#">Посуда</a>
+                    <a href="#">Вазы</a>
+                    <a href="#">Посуда</a>
+                </nav>
+                <div class="header-catalog__sublinks _links-sub">
+                    <nav class="header-catalog__links">
+                        <a href="#" class="_link-sub">
+                            Стулья
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#" class="_link-sub">
+                            Диваны
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#" class="_link-sub">
+                            Хранение
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#" class="_link-sub">
+                            Столы
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#" class="_link-sub">
+                            Уличная мебель
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#">Скамьи</a>
+                        <a href="#">Кровати</a>
+                    </nav>
+                    <nav class="header-catalog__links">
+                        <a href="#" class="_link-sub">
+                            Стулья1
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#" class="_link-sub">
+                            Диваны
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#" class="_link-sub">
+                            Хранение
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#" class="_link-sub">
+                            Столы
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#" class="_link-sub">
+                            Уличная мебель
+                            <img src="img/svgicons/slider-arrow.svg" alt="">
+                        </a>
+                        <a href="#">Скамьи</a>
+                        <a href="#">Кровати</a>
+                    </nav>
+                </div>
+                <div class="header-catalog__last _links-last">
+                    <nav class="header-catalog__links">
+                        <a href="#">Кушетки</a>
+                        <a href="#">Модульные диваны</a>
+                        <a href="#">Прямые диваны</a>
+                        <a href="#">Угловые диваны</a>
+                        <a href="#">Раскладные диваны</a>
+                    </nav>
+                </div>
+            </main>
+            <aside class="header-aside">
+                <a href="#" class="header-aside__block">
+                    <img src="img/header/sale.png" alt="">
+                    <p>скидки</p>
+                </a>
+                <a href="#" class="header-aside__block">
+                    <img src="img/header/instock.png" alt="">
+                    <p>в наличии</p>
+                </a>
+            </aside>
+        </div>
+    </div>
+</section>
+<section class="header-nav__mobile nav-mobile">
+    <div class="container">
+        <main class="nav-mobile__main">
+            <div class="nav-mobile__town slide">
+                <header class="slide__header">
+                    <p>Москва</p>
+                    <button>
+                        <img src="img/svgicons/dropdown.svg" alt="">
+                    </button>
+                </header>
+                <main class="slide__hidden">
+                    <a href="#">Москва</a>
+                    <a href="#">Челябинск</a>
+                </main>
+            </div>
+            <article class="slide nav-mobile__link">
+                <!-- Первый уровень -->
+                <header class="slide__header">
+                    <a href="#">каталог</a>
+                    <button>
+                        <img src="img/svgicons/dropdown.svg" alt="">
+                    </button>
+                </header>
+                <main class="slide__hidden">
+                    <!-- Второй уровень -->
+                    <header class="slide__header">
+                        <a href="#">Дизайнерская мебель</a>
+                        <button>
+                            <img src="img/svgicons/dropdown.svg" alt="">
+                        </button>
+                    </header>
+                    <main class="slide__hidden">
+                        <!-- Третий уровень -->
+                        <header class="slide__header">
+                            <a href="#">Стулья</a>
+                            <button>
+                                <img src="img/svgicons/dropdown.svg" alt="">
+                            </button>
+                        </header>
+                        <main class="slide__hidden">
+                            <a href="#">Обеденные стулья</a>
+                            <a href="#">Барные стулья</a>
+                            <a href="#">Табуреты</a>
+                        </main>
+                        <!-- Третий уровень -->
+                        <!-- Третий уровень -->
+                        <header class="slide__header">
+                            <a href="#">Диваны</a>
+                            <button>
+                                <img src="img/svgicons/dropdown.svg" alt="">
+                            </button>
+                        </header>
+                        <main class="slide__hidden">
+                            <a href="#">Обеденные диваны</a>
+                            <a href="#">Барные диваны</a>
+                            <a href="#">Диваны</a>
+                        </main>
+                        <!-- Третий уровень -->
+                    </main>
+                    <!-- /Второй уровень -->
+                    <!-- Второй уровень -->
+                    <header class="slide__header">
+                        <a href="#">Horeca</a>
+                        <button>
+                            <img src="img/svgicons/dropdown.svg" alt="">
+                        </button>
+                    </header>
+                    <main class="slide__hidden">
+                        <!-- Третий уровень -->
+                        <header class="slide__header">
+                            <a href="#">Стулья</a>
+                            <button>
+                                <img src="img/svgicons/dropdown.svg" alt="">
+                            </button>
+                        </header>
+                        <main class="slide__hidden">
+                            <a href="#">Обеденные стулья</a>
+                            <a href="#">Барные стулья</a>
+                            <a href="#">Табуреты</a>
+                        </main>
+                        <!-- Третий уровень -->
+                    </main>
+                    <!-- /Второй уровень -->
+                    <a href="#">освещение</a>
+                    <a href="#">посуда</a>
+                    <a href="#">вазы</a>
+                    <a href="#">винтаж</a>
+                    <a href="#">в наличии</a>
+                </main>
+                <!-- /Первый уровень -->
+            </article>
+            <a href="#">о нас</a>
+            <a href="#">проекты</a>
+            <a href="#">бренды</a>
+            <a href="#">дизайнерам</a>
+            <a href="#">комплектация</a>
+            <a href="#">контакты</a>
+            <a href="#">Выйти</a>
+        </main>
+    </div>
+</section>
+<svg display="none">
+    <symbol id="favorite" viewBox="0 0 20 16">
+        <g>
+            <path d="M17.0714 9.14222L11.4146 14.7991C10.6335 15.5801 9.36721 15.5801 8.58616 14.7991L2.92931 9.14222C0.976689 7.1896 0.976688 4.02378 2.92931 2.07116C4.88193 0.118534 8.04776 0.118534 10.0004 2.07116C11.953 0.118534 15.1188 0.118534 17.0714 2.07116C19.0241 4.02378 19.0241 7.1896 17.0714 9.14222Z" stroke-linecap="round" stroke-linejoin="round"/>
+        </g>
+    </symbol>
+</svg>
+<!-- <svg>
+    <use xlink:href="#favorite"></use>
+</svg> -->
+
+            <main class="content">
+                <article class="breadcrumbs">
+                    <div class="container">
+                        <main class="breadcrumbs__row">
+                            <a href="#">Главная</a>
+                            <div class="breadcrumbs__separator">/</div>
+                            <a href="#">Дизайнерская мебель</a>
+                            <div class="breadcrumbs__separator">/</div>
+                            <a href="#">Стулья</a>
+                            <div class="breadcrumbs__separator">/</div>
+                            <p>Барные стулья</p>
+                        </main>
+                    </div>
+                </article>
+                <article class="page-intro">
+                    <div class="container">
+                        <header class="block-header">
+                            <h1>Барные стулья</h1>
+                        </header>
+                        <article class="article">
+                            <p>
+                                Несколько предложений о цели и содержании блога. Интерьер вашего дома – это не просто пространство, где вы живете, но и  отражение вашей личности и стиля. Именно поэтому выбор мебели для вашего  дома так важен. В поисках неповторимости и уникальности, многие наши  покупатели обращают свое внимание на дизайнерскую мебель, которая  представляет собой нечто большее, чем просто предметы интерьера. Это  настоящие произведения искусства, созданные ведущими дизайнерами, и  внедряющие в вашу жизнь непередаваемую атмосферу стиля и комфорта.
+                            </p>
+                        </article>
+                    </div>
+                </article>
+                <article class="tabs article">
+                    <div class="container">
+                        <nav class="tabs__nav">
+                            <button class="active">Все</button>
+                            <button>Новости компании</button>
+                            <button>Советы по выбору мебели</button>
+                            <button>Тренды в дизайне интерьера</button>
+                        </nav>
+                        <main class="tabs__row">
+                            <main class="tabs__item projects__row active">
+                                <article class="card">
+                                    <main class="card__hover">
+                                        <img src="img/index/furniture/1.png" alt="">
+                                        <div class="card__hidden">
+                                            <p>Руководство по выбору столов и стульев для ресторанов на открытом воздухе</p>
+                                            <time datetime="2025-02-11">11.02.2025</time>
+                                            <a href="#" class="btn btn__bordered">Читать</a>
+                                        </div>
+                                    </main>
+                                    <footer class="card__footer">
+                                        <p>Руководство по выбору столов и стульев для ресторанов на открытом воздухе</p>
+                                        <time datetime="2025-02-11">11.02.2025</time>
+                                    </footer>
+                                </article>
+                            </main>
+                        </main>
+                    </div>
+                </article>
+            </main>
+            <footer class="footer">
+    <div class="container">
+        <header class="footer__top">
+            <article class="footer__item">
+                <div class="footer__logo">
+                    <a href="#">
+                        <img src="img/svgicons/logo-footer.svg" alt="logo-footer">
+                    </a>
+                    <p>
+                        Мебель для общественных
+                        и частных интерьеров
+                    </p>
+                </div>
+                <nav class="footer__nav">
+                    <a href="#">Положение о персональных данных</a>
+                    <a href="#">Гарантия и возврат</a>
+                    <a href="#">Способы оплаты</a>
+                    <a href="#">Доставка</a>
+                </nav>
+            </article>
+            <article class="footer__item">
+                <header class="slide__header">
+                    <h2>Информация</h2>
+                    <button>
+                        <img src="img/svgicons/dropdown.svg" alt="">
+                    </button>
+                </header>
+                <nav class="footer__nav slide__hidden">
+                    <a href="#">О нас</a>
+                    <a href="#">Каталог</a>
+                    <a href="#">Проекты</a>
+                    <a href="#">Бренды</a>
+                    <a href="#">Дизайнерам</a>
+                    <a href="#">Комплектация</a>
+                </nav>
+            </article>
+            <article class="footer__item">
+                <header class="slide__header">
+                    <h2>Продукция</h2>
+                    <button>
+                        <img src="img/svgicons/dropdown.svg" alt="">
+                    </button>
+                </header>
+                <nav class="footer__nav slide__hidden">
+                    <a href="#">Дизайнерская мебель</a>
+                    <a href="#">Horeca</a>
+                    <a href="#">Освещение</a>
+                    <a href="#">Посуда</a>
+                    <a href="#">Вазы</a>
+                    <a href="#">В наличии</a>
+                </nav>
+            </article>
+            <article class="footer__item">
+                <header class="slide__header">
+                    <h2>Контакты</h2>
+                    <button>
+                        <img src="img/svgicons/dropdown.svg" alt="">
+                    </button>
+                </header>
+                <nav class="footer__nav slide__hidden">
+                    <a href="mailto:info@chaircollection.ru">info@chaircollection.ru</a>
+                    <a href="tel:+7 925-267-46-34">+7 925-267-46-34</a>
+                    <a href="tel:+7 925-267-46-34">8 800-300-82-91</a>
+                    <p>Москва, ул. Академика Королева, 13, стр. 1</p>
+                    <p>пн-сб 10:00–19:00</p>
+                </nav>
+                <nav class="footer__socials socials">
+                    <a href="#">
+                        <img src="img/svgicons/vk.svg" alt="vk">
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/tg.svg" alt="tg">
+                    </a>
+                    <a href="#">
+                        <img src="img/svgicons/pinterest.svg" alt="pinterest">
+                    </a>
+                </nav>
+            </article>
+        </header>
+        <footer class="footer__bottom">
+            <div class="footer__text">
+                <p>Обращаем ваше внимание, что цены, указанные на сайте, могут отличаться от фактических. Также производитель оставляет за собой право менять характеристики товара без предварительного уведомления. Пожалуйста, уточняйте цену и информацию о товаре у менеджеров. Информация о товаре носит справочный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского Кодекса Российской Федерации</p>
+                <div>
+                    <p>© 2025 Chaircollection</p>
+                    <a href="#">Карта сайта</a>
+                </div>
+            </div>
+            <div class="footer__payments">
+                <img src="img/svgicons/visa.svg" alt="visa">
+                <img src="img/svgicons/mastercard.svg" alt="mastercard">
+                <img src="img/svgicons/mir.svg" alt="mir">
+            </div>
+        </footer>
+    </div>
+</footer>
+<!-- <div class="dialogbox dialogbox-calc">
+    <div class="dialogbox__inner">
+        <div class="dialogbox__window">
+            <div class="dialogbox__close"></div>
+            <form action="#" id="calc-form">
+                <header class="block-header left">
+                    <h2>Рассчитать макет</h2>
+                    <p>Оставьте свои контактные данные, и мы свяжемся с вами для обсуждения деталей и расчёта стоимости</p>
+                </header>
+                <main class="dialogbox__inputs">
+                    <label>
+                        <input type="text" name="name" placeholder="Ваше имя">
+                        <img src="img/svgicons/form/name.svg" alt="">
+                    </label>
+                    <label>
+                        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                        <img src="img/svgicons/form/phone.svg" alt="">
+                    </label>
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail">
+                        <img src="img/svgicons/form/mail.svg" alt="">
+                    </label>
+                    <div class="custom-file">
+                        <label class="custom-file-button">
+                            <img src="img/svgicons/form/file.svg" alt="">
+                            <span>Прикрепить файл</span>
+                            <input
+                                type="file"
+                                id="file"
+                                class="hidden"
+                                name="file"
+                            >
+                        </label>
+                        <div class="custom-file-remove">×</div>
+                    </div>
+                </main>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+            <label class="checkbox">
+                <input type="checkbox" class="custom-checkbox" checked="">
+                <p>
+                    Нажимая кнопку «Отправить», Вы соглашаетесь с нашими
+                    <a target="_blank" href="/files/policy.pdf">условиями и положениями</a>
+                </p>
+            </label>
+        </div>
+    </div>
+</div> -->
+
+        </div>
+    </body>
+</html>
