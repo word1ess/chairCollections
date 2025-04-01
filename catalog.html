@@ -358,227 +358,172 @@
                 <article class="catalog article">
                     <div class="container">
                         <main class="catalog__main">
-                            <aside class="filters__row _filters">
-                                <header class="block-header">
-                                    <h2>Фильтры</h2>
-                                    <button class="_filter-close">
-                                        ×
-                                    </button>
-                                </header>
-                                <article class="filters__item">
-                                    <h3>Цена ₽</h3>
-                                    <div class="range-slider">
-                                        <div class="filters__range-inputs">
-                                            <input type="text" id="min-value">
-                                            <input type="text" id="max-value">
-                                        </div>
-                                        <input
-                                            type="range"
-                                            id="slider-min"
-                                            min="0"
-                                            max="100"
-                                            value="20"
-                                        >
-                                        <input
-                                            type="range"
-                                            id="slider-max"
-                                            min="0"
-                                            max="100"
-                                            value="80"
-                                        >
-                                        <div class="slider-track"></div>
-                                    </div>
-                                </article>
-                                <article class="filters__item">
-                                    <h3>Подлокотники</h3>
-                                    <div class="filters__inputs">
-                                        <label class="checkbox">
-                                            <input
-                                                id="naturalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Подлокотники"
-                                                checked=""
-                                            >
-                                            <p>
-                                                Да
-                                            </p>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input
-                                                id="legalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Подлокотники"
-                                            >
-                                            <p>
-                                                Нет
-                                            </p>
-                                        </label>
-                                    </div>
-                                    <h3>Образец в шоуруме</h3>
-                                    <div class="filters__inputs">
-                                        <label class="checkbox">
-                                            <input
-                                                id="naturalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Образец"
-                                                checked=""
-                                            >
-                                            <p>
-                                                Да
-                                            </p>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input
-                                                id="legalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Образец"
-                                            >
-                                            <p>
-                                                Нет
-                                            </p>
-                                        </label>
-                                    </div>
-                                    <h3>Обивка</h3>
-                                    <div class="filters__inputs">
-                                        <label class="checkbox">
-                                            <input
-                                                id="naturalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Обивка"
-                                                checked
-                                            >
-                                            <p>
-                                                Да
-                                            </p>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input
-                                                id="legalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Обивка"
-                                            >
-                                            <p>
-                                                Нет
-                                            </p>
-                                        </label>
-                                    </div>
-                                    <h3>Штабилируемые</h3>
-                                    <div class="filters__inputs">
-                                        <label class="checkbox">
-                                            <input
-                                                id="naturalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Штабилируемые"
-                                                checked=""
-                                            >
-                                            <p>
-                                                Да
-                                            </p>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input
-                                                id="legalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Штабилируемые"
-                                            >
-                                            <p>
-                                                Нет
-                                            </p>
-                                        </label>
-                                    </div>
-                                    <h3>Уличное использование</h3>
-                                    <div class="filters__inputs">
-                                        <label class="checkbox">
-                                            <input
-                                                id="naturalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Уличное"
-                                                checked=""
-                                            >
-                                            <p>
-                                                Да
-                                            </p>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input
-                                                id="legalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Уличное"
-                                            >
-                                            <p>
-                                                Нет
-                                            </p>
-                                        </label>
-                                    </div>
-                                </article>
-                                <article class="filters__item">
-                                    <h3>Материал</h3>
-                                    <div class="filters__inputs column">
-                                        <label class="checkbox">
-                                            <input
-                                                id="naturalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Материал"
-                                                checked=""
-                                            >
-                                            <p>
-                                                Дерево
-                                            </p>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input
-                                                id="legalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Материал"
-                                            >
-                                            <p>
-                                                Дерево/Металл
-                                            </p>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input
-                                                id="legalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Материал"
-                                            >
-                                            <p>
-                                                Металл
-                                            </p>
-                                        </label>
-                                        <label class="checkbox">
-                                            <input
-                                                id="legalPerson"
-                                                type="radio"
-                                                class="custom-checkbox"
-                                                name="Материал"
-                                            >
-                                            <p>
-                                                Пластик
-                                            </p>
-                                        </label>
-                                    </div>
-                                </article>
-                                <article class="slide">
-                                    <header class="slide__header">
-                                        <h3>Стиль</h3>
-                                        <button>
-                                            <img src="img/svgicons/dropdown.svg" alt="">
+                            <aside class="_filters">
+                                <div class="filters__row">
+                                    <header class="block-header">
+                                        <h2>Фильтры</h2>
+                                        <button class="_filter-close">
+                                            ×
                                         </button>
                                     </header>
-                                    <main class="slide__hidden">
+                                    <article class="filters__item">
+                                        <h3>Цена ₽</h3>
+                                        <div class="range-slider">
+                                            <div class="filters__range-inputs">
+                                                <input type="text" id="min-value">
+                                                <input type="text" id="max-value">
+                                            </div>
+                                            <input
+                                                type="range"
+                                                id="slider-min"
+                                                min="0"
+                                                max="100"
+                                                value="20"
+                                            >
+                                            <input
+                                                type="range"
+                                                id="slider-max"
+                                                min="0"
+                                                max="100"
+                                                value="80"
+                                            >
+                                            <div class="slider-track"></div>
+                                        </div>
+                                    </article>
+                                    <article class="filters__item">
+                                        <h3>Подлокотники</h3>
+                                        <div class="filters__inputs">
+                                            <label class="checkbox">
+                                                <input
+                                                    id="naturalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Подлокотники"
+                                                    checked=""
+                                                >
+                                                <p>
+                                                    Да
+                                                </p>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input
+                                                    id="legalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Подлокотники"
+                                                >
+                                                <p>
+                                                    Нет
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <h3>Образец в шоуруме</h3>
+                                        <div class="filters__inputs">
+                                            <label class="checkbox">
+                                                <input
+                                                    id="naturalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Образец"
+                                                    checked=""
+                                                >
+                                                <p>
+                                                    Да
+                                                </p>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input
+                                                    id="legalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Образец"
+                                                >
+                                                <p>
+                                                    Нет
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <h3>Обивка</h3>
+                                        <div class="filters__inputs">
+                                            <label class="checkbox">
+                                                <input
+                                                    id="naturalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Обивка"
+                                                    checked
+                                                >
+                                                <p>
+                                                    Да
+                                                </p>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input
+                                                    id="legalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Обивка"
+                                                >
+                                                <p>
+                                                    Нет
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <h3>Штабилируемые</h3>
+                                        <div class="filters__inputs">
+                                            <label class="checkbox">
+                                                <input
+                                                    id="naturalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Штабилируемые"
+                                                    checked=""
+                                                >
+                                                <p>
+                                                    Да
+                                                </p>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input
+                                                    id="legalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Штабилируемые"
+                                                >
+                                                <p>
+                                                    Нет
+                                                </p>
+                                            </label>
+                                        </div>
+                                        <h3>Уличное использование</h3>
+                                        <div class="filters__inputs">
+                                            <label class="checkbox">
+                                                <input
+                                                    id="naturalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Уличное"
+                                                    checked=""
+                                                >
+                                                <p>
+                                                    Да
+                                                </p>
+                                            </label>
+                                            <label class="checkbox">
+                                                <input
+                                                    id="legalPerson"
+                                                    type="radio"
+                                                    class="custom-checkbox"
+                                                    name="Уличное"
+                                                >
+                                                <p>
+                                                    Нет
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </article>
+                                    <article class="filters__item">
+                                        <h3>Материал</h3>
                                         <div class="filters__inputs column">
                                             <label class="checkbox">
                                                 <input
@@ -626,14 +571,71 @@
                                                 </p>
                                             </label>
                                         </div>
-                                    </main>
-                                </article>
-                                <button type="reset" class="btn btn__black">
-                                    Принять
-                                </button>
-                                <button type="reset" class="btn btn__bordered">
-                                    Сбросить
-                                </button>
+                                    </article>
+                                    <article class="slide">
+                                        <header class="slide__header">
+                                            <h3>Стиль</h3>
+                                            <button>
+                                                <img src="img/svgicons/dropdown.svg" alt="">
+                                            </button>
+                                        </header>
+                                        <main class="slide__hidden">
+                                            <div class="filters__inputs column">
+                                                <label class="checkbox">
+                                                    <input
+                                                        id="naturalPerson"
+                                                        type="radio"
+                                                        class="custom-checkbox"
+                                                        name="Материал"
+                                                        checked=""
+                                                    >
+                                                    <p>
+                                                        Дерево
+                                                    </p>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input
+                                                        id="legalPerson"
+                                                        type="radio"
+                                                        class="custom-checkbox"
+                                                        name="Материал"
+                                                    >
+                                                    <p>
+                                                        Дерево/Металл
+                                                    </p>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input
+                                                        id="legalPerson"
+                                                        type="radio"
+                                                        class="custom-checkbox"
+                                                        name="Материал"
+                                                    >
+                                                    <p>
+                                                        Металл
+                                                    </p>
+                                                </label>
+                                                <label class="checkbox">
+                                                    <input
+                                                        id="legalPerson"
+                                                        type="radio"
+                                                        class="custom-checkbox"
+                                                        name="Материал"
+                                                    >
+                                                    <p>
+                                                        Пластик
+                                                    </p>
+                                                </label>
+                                            </div>
+                                        </main>
+                                    </article>
+                                    <button type="reset" class="btn btn__black">
+                                        Принять
+                                    </button>
+                                    <button type="reset" class="btn btn__bordered">
+                                        Сбросить
+                                    </button>
+                                </div>
                             </aside>
                             <main id="mse2_results" class="catalog__row">
                                 <div class="ms2_product catalog-item">
@@ -951,7 +953,7 @@
                         <p>Дизайн барных стульев должен гармонировать с общим стилем заведения. Современный бар требует минималистичных и лаконичных стульев, а традиционный паб - массивных и классических моделей. Обратите внимание на цветовую гамму и отделку стульев. Стильные и яркие стулья могут стать акцентом интерьера, привлекая внимание гостей.</p>
                     </div>
                 </article>
-                <article class="catalog article">
+                <article class="catalog article bg-grey">
                     <div class="container">
                         <header class="block-header">
                             <h2>Новые поступления</h2>
