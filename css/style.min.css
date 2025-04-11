@@ -346,6 +346,14 @@ textarea {
   color: #1e1e1f;
 }
 
+.swiper-button-next:hover::after {
+  transform: translate(4px, 0px);
+}
+
+.swiper-button-prev:hover::after {
+  transform: translate(-4px, 0px);
+}
+
 .swiper-arrows {
   display: flex;
   gap: 16px;
@@ -452,7 +460,6 @@ textarea {
   position: relative;
   background: #fff;
   transition: all 300ms ease;
-  padding: 0px 5px 5px;
 }
 .catalog-item:hover {
   background: #fafafa;
@@ -476,8 +483,8 @@ textarea {
 .catalog-item__header svg {
   stroke: #8b8b8b;
   fill: transparent;
-  width: 20px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   opacity: 0;
   transition: all 300ms ease;
   cursor: pointer;
@@ -756,12 +763,22 @@ textarea {
   font-size: 16px;
   color: #bababa;
 }
+.breadcrumbs a {
+  transition: all 300ms ease;
+}
+.breadcrumbs a:hover {
+  color: #1e1e1f;
+}
 .breadcrumbs__back {
   display: flex;
   align-items: center;
   gap: 8px;
   margin-right: 32px;
   color: #1e1e1f !important;
+  transition: all 300ms ease;
+}
+.breadcrumbs__back:hover {
+  opacity: 0.7;
 }
 
 .page-intro {
@@ -1002,6 +1019,7 @@ textarea {
   color: #8b8b8b;
   max-width: 22px;
   text-align: center;
+  padding: 0px;
   border-color: transparent;
 }
 .count:has(input:focus) {
@@ -1026,7 +1044,7 @@ textarea {
 }
 .block-about .container .btn {
   margin-top: 40px;
-  max-width: 320px;
+  max-width: 402px;
 }
 .block-about__info {
   display: flex;
@@ -1767,7 +1785,7 @@ textarea {
 
 @keyframes header {
   100% {
-    transform: translate(0%, -38px);
+    transform: translate(0%, 0%);
   }
 }
 .header {
@@ -1794,8 +1812,9 @@ textarea {
   backdrop-filter: blur(30px);
   background: rgba(255, 255, 255, 0.8);
 }
-.header.active + .header-catalog {
-  padding-top: 76px;
+.header.active:has(.header__burger.burger-active) {
+  backdrop-filter: blur(0px);
+  background: rgb(255, 255, 255);
 }
 .header__top {
   color: #8b8b8b;
@@ -1820,6 +1839,12 @@ textarea {
   gap: 24px;
   margin-left: auto;
 }
+.header__phones a {
+  transition: all 300ms ease;
+}
+.header__phones a:hover {
+  color: #1e1e1f;
+}
 .header__phones p {
   margin-bottom: 0px;
 }
@@ -1837,6 +1862,16 @@ textarea {
   font-weight: 400;
   font-size: 14px;
   background: none;
+  transition: all 300ms ease;
+}
+.header__callback button:hover {
+  color: #1e1e1f;
+}
+.header__callback a {
+  transition: all 300ms ease;
+}
+.header__callback a:hover {
+  color: #1e1e1f;
 }
 .header__bottom {
   padding: 20px 0px;
@@ -1851,6 +1886,10 @@ textarea {
   width: 24px;
   position: relative;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+.header__burger:hover {
+  opacity: 0.8;
 }
 .header__burger::after, .header__burger::before {
   content: "";
@@ -1948,11 +1987,11 @@ textarea {
 .header__buttons a {
   padding: 10px;
   margin: -10px;
-  opacity: 0.7;
   transition: all 300ms ease;
+  opacity: 1;
 }
 .header__buttons a:hover {
-  opacity: 1;
+  opacity: 0.7;
 }
 
 .header-catalog {
@@ -2189,9 +2228,6 @@ textarea {
   background: transparent;
   transition: all 300ms ease;
 }
-.companies__item:hover::after {
-  background: rgba(0, 0, 0, 0.02);
-}
 .companies__item img {
   display: block;
   width: 100%;
@@ -2348,6 +2384,10 @@ textarea {
 }
 .item-page__thumbs .swiper-slide.swiper-slide-thumb-active {
   border-color: #1e1e1f;
+}
+.item-page__info {
+  max-width: 50%;
+  width: 100%;
 }
 .item-page__logic {
   margin-bottom: 40px;
@@ -3107,6 +3147,12 @@ textarea {
   padding: 10px;
   margin: -10px;
 }
+.footer__socials a {
+  transition: all 300ms ease;
+}
+.footer__socials a:hover {
+  opacity: 0.7;
+}
 .footer__bottom {
   display: flex;
   align-items: flex-end;
@@ -3235,6 +3281,9 @@ body {
   .header__buttons {
     margin-left: auto;
   }
+  .furniture h2 {
+    max-width: 772px;
+  }
   .header-catalog {
     padding-top: 103px;
   }
@@ -3262,9 +3311,6 @@ body {
   }
 }
 @media only screen and (max-width: 1280px) {
-  .header__address p:first-child {
-    display: none;
-  }
   .header__nav a {
     font-size: 14px;
   }
@@ -3300,6 +3346,9 @@ body {
   .intro__main h1,
   .intro__main h2 {
     font-size: 50px;
+  }
+  .header__address p:last-child {
+    display: none;
   }
   .header-catalog__links, .header-catalog__sublinks, .header-catalog__last {
     flex: 0 0 200px;
@@ -3365,13 +3414,24 @@ body {
     display: none;
   }
   .header__callback {
-    margin-left: 0px;
+    margin-left: auto;
   }
   .header__burger {
     order: 10;
   }
   .header__burger::after, .header__burger::before, .header__burger span {
     height: 1px;
+  }
+  .header__phones {
+    order: 10;
+    margin-left: 0px;
+    gap: 0px;
+  }
+  .header__phones p {
+    display: none;
+  }
+  .header__phones img {
+    display: block;
   }
   .nav-mobile {
     display: none;
@@ -3507,9 +3567,8 @@ body {
   }
   .catalog-item__header .zoom {
     display: block;
-    width: 23px;
+    width: 24px;
     filter: invert(1);
-    transform: translate(0px, -3px);
   }
   .catalog-item__price {
     gap: 4px 16px;
@@ -3542,7 +3601,7 @@ body {
   .item-page .container {
     flex-wrap: wrap;
   }
-  .item-page__gallery {
+  .item-page__gallery, .item-page__info {
     max-width: 100%;
   }
   .item-page__prev, .item-page__next {
@@ -3832,16 +3891,8 @@ body {
   .header__address {
     display: none;
   }
-  .header__phones {
-    order: 10;
+  .header__callback {
     margin-left: 0px;
-    gap: 0px;
-  }
-  .header__phones p {
-    display: none;
-  }
-  .header__phones img {
-    display: block;
   }
   .footer {
     padding: 40px 0px;
@@ -4285,6 +4336,15 @@ body {
   }
   .item-page__article .block-header h3 {
     font-size: 18px;
+  }
+  .item-page-gallery__gallery svg {
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    right: 24px;
+  }
+  .item-page-gallery__gallery .swiper-slide {
+    aspect-ratio: 1/1;
   }
   .item-page-gallery__footer {
     margin-top: 32px;
