@@ -25,7 +25,17 @@
     <header class="header__top">
         <div class="container">
             <div class="header__address">
-                <p>Москва, ул. Академика Королева, 13, стр. 1</p>
+                <p>
+                    <img src="img/svgicons/address.svg" alt="">
+                    Москва, ул. Академика Королева, 13, стр. 1
+                </p>
+                <div class="header-address__hidden">
+                    <div class="header-address__row">
+                        <a href="#">Москва</a>
+                        <a href="#">Челябинск</a>
+                        <a href="#">Москва</a>
+                    </div>
+                </div>
                 <p>пн-сб 10:00–19:00</p>
             </div>
             <nav class="header__phones">
@@ -38,7 +48,7 @@
                 </a>
             </nav>
             <div class="header__callback">
-                <button>Заказать звонок</button>
+                <button class="btn-callback">Заказать звонок</button>
                 <a href="https://api.whatsapp.com/send?phone=79689351446">Написать в Whatsapp</a>
             </div>
         </div>
@@ -177,18 +187,6 @@
 <section class="header-nav__mobile nav-mobile">
     <div class="container">
         <main class="nav-mobile__main">
-            <div class="nav-mobile__town slide">
-                <header class="slide__header">
-                    <p>Москва</p>
-                    <button>
-                        <img src="img/svgicons/dropdown.svg" alt="">
-                    </button>
-                </header>
-                <main class="slide__hidden">
-                    <a href="#">Москва</a>
-                    <a href="#">Челябинск</a>
-                </main>
-            </div>
             <article class="slide nav-mobile__link">
                 <!-- Первый уровень -->
                 <header class="slide__header">
@@ -271,7 +269,32 @@
             <a href="#">дизайнерам</a>
             <a href="#">комплектация</a>
             <a href="#">контакты</a>
-            <a href="#">Выйти</a>
+            <a href="#" class="logout">Выйти</a>
+            <div class="nav-mobile__town slide">
+                <header class="slide__header">
+                    <p>Москва</p>
+                    <button>
+                        <img src="img/svgicons/dropdown.svg" alt="">
+                    </button>
+                </header>
+                <main class="slide__hidden">
+                    <a href="#">Москва</a>
+                    <a href="#">Челябинск</a>
+                </main>
+            </div>
+            <div class="header__address">
+                <p>пн-сб 10:00–19:00</p>
+            </div>
+            <nav class="header__phones">
+                <a href="tel:+7 925-267-46-34">
+                    <img src="img/svgicons/phone.svg" alt="">
+                    <p>+7 925-267-46-34</p>
+                </a>
+                <a href="tel:8 800-300-82-91">
+                    <img src="img/svgicons/phone.svg" alt="">
+                    <p>8 800-300-82-91</p>
+                </a>
+            </nav>
         </main>
     </div>
 </section>
@@ -463,6 +486,36 @@
                                 </footer>
                             </div>
                         </main>
+                        <footer class="mse2_pagination catalog__pagination">
+                            <aside class="catalog__count">
+                                <span>24</span>
+                                <span>/78</span>
+                                товаров
+                            </aside>
+                            <div class="catalog__pages">
+                                <div class="page-item active">
+                                    <a href="#" class="page-link">1</a>
+                                </div>
+                                <div class="page-item">
+                                    <a href="#" class="page-link">2</a>
+                                </div>
+                                <div class="page-item">
+                                    <a href="#" class="page-link">3</a>
+                                </div>
+                                <div class="page-item">
+                                    <a href="#" class="page-link">4</a>
+                                </div>
+                                <div class="page-item">
+                                    <a href="#" class="page-link">5</a>
+                                </div>
+                                <div class="page-item">
+                                    <a href="#" class="page-link">6</a>
+                                </div>
+                                <div class="page-item">
+                                    <a href="#" class="page-link">18</a>
+                                </div>
+                            </div>
+                        </footer>
                     </div>
                 </article>
             </main>
@@ -479,8 +532,12 @@
                         и частных интерьеров
                     </p>
                 </div>
-                <nav class="footer__nav">
-                    <a href="#">Положение о персональных данных</a>
+                <nav class="footer__nav pc">
+                    <a href="#">
+                        Положение о персональных
+                        <br>
+                        данных
+                    </a>
                     <a href="#">Гарантия и возврат</a>
                     <a href="#">Способы оплаты</a>
                     <a href="#">Доставка</a>
@@ -544,71 +601,70 @@
                     </a>
                 </nav>
             </article>
+            <p class="mobile">© 2025 Chaircollection</p>
+            <nav class="footer__nav mobile">
+                <a href="#">
+                    Положение о персональных
+                    данных
+                </a>
+                <a href="#">Гарантия и возврат</a>
+                <a href="#">Способы оплаты</a>
+                <a href="#">Доставка</a>
+            </nav>
         </header>
         <footer class="footer__bottom">
-            <div class="footer__text">
-                <p>Обращаем ваше внимание, что цены, указанные на сайте, могут отличаться от фактических. Также производитель оставляет за собой право менять характеристики товара без предварительного уведомления. Пожалуйста, уточняйте цену и информацию о товаре у менеджеров. Информация о товаре носит справочный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского Кодекса Российской Федерации</p>
-                <div>
-                    <p>© 2025 Chaircollection</p>
-                    <a href="#">Карта сайта</a>
+            <p>Обращаем ваше внимание, что цены, указанные на сайте, могут отличаться от фактических. Также производитель оставляет за собой право менять характеристики товара без предварительного уведомления. Пожалуйста, уточняйте цену и информацию о товаре у менеджеров. Информация о товаре носит справочный характер и не является публичной офертой, определяемой положениями Статьи 437 Гражданского Кодекса Российской Федерации</p>
+            <div class="footer__bottom-row">
+                <div class="footer__text">
+                    <div>
+                        <p class="pc">© 2025 Chaircollection</p>
+                        <a href="#">Карта сайта</a>
+                    </div>
                 </div>
-            </div>
-            <div class="footer__payments">
-                <img src="img/svgicons/visa.svg" alt="visa">
-                <img src="img/svgicons/mastercard.svg" alt="mastercard">
-                <img src="img/svgicons/mir.svg" alt="mir">
+                <div class="footer__payments">
+                    <img src="img/svgicons/visa.svg" alt="visa">
+                    <img src="img/svgicons/mastercard.svg" alt="mastercard">
+                    <img src="img/svgicons/mir.svg" alt="mir">
+                </div>
             </div>
         </footer>
     </div>
 </footer>
-<!-- <div class="dialogbox dialogbox-calc">
+<div class="dialogbox dialogbox-callback">
     <div class="dialogbox__inner">
         <div class="dialogbox__window">
             <div class="dialogbox__close"></div>
-            <form action="#" id="calc-form">
-                <header class="block-header left">
-                    <h2>Рассчитать макет</h2>
-                    <p>Оставьте свои контактные данные, и мы свяжемся с вами для обсуждения деталей и расчёта стоимости</p>
-                </header>
-                <main class="dialogbox__inputs">
-                    <label>
-                        <input type="text" name="name" placeholder="Ваше имя">
-                        <img src="img/svgicons/form/name.svg" alt="">
-                    </label>
-                    <label>
-                        <input type="tel" name="phone" placeholder="+7 (___) ___-__-__">
-                        <img src="img/svgicons/form/phone.svg" alt="">
-                    </label>
-                    <label>
-                        <input type="email" name="email" placeholder="E-mail">
-                        <img src="img/svgicons/form/mail.svg" alt="">
-                    </label>
-                    <div class="custom-file">
-                        <label class="custom-file-button">
-                            <img src="img/svgicons/form/file.svg" alt="">
-                            <span>Прикрепить файл</span>
-                            <input
-                                type="file"
-                                id="file"
-                                class="hidden"
-                                name="file"
-                            >
+            <div class="contact__form">
+                <form action="#">
+                    <header class="block-header">
+                        <h2>Закажите обратный звонок и наши специалисты свяжутся с Вами в ближайшее время</h2>
+                    </header>
+                    <main class="contact-form__inputs">
+                        <input type="text" name="name" placeholder="Имя">
+                        <input type="email" name="email" placeholder="Почта">
+                        <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Телефон*"
+                            required
+                        >
+                    </main>
+                    <textarea name="comment" placeholder="Сообщение"></textarea>
+                    <footer class="contact-form__footer">
+                        <label class="checkbox">
+                            <input type="checkbox" class="custom-checkbox" checked="">
+                            <p>
+                                Даю свое согласие на обработку персональных данных
+                                <a target="_blank" href="#">персональных данных</a>
+                            </p>
                         </label>
-                        <div class="custom-file-remove">×</div>
-                    </div>
-                </main>
-                <button type="submit" class="btn">Отправить</button>
-            </form>
-            <label class="checkbox">
-                <input type="checkbox" class="custom-checkbox" checked="">
-                <p>
-                    Нажимая кнопку «Отправить», Вы соглашаетесь с нашими
-                    <a target="_blank" href="/files/policy.pdf">условиями и положениями</a>
-                </p>
-            </label>
+                        <button class="btn btn__bordered">Отправить</button>
+                    </footer>
+                </form>
+            </div>
         </div>
     </div>
-</div> -->
+</div>
 
         </div>
     </body>
